@@ -1,0 +1,120 @@
+html {
+    font-size: 100px;
+}
+
+body,
+a,
+ul,
+li {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+    /*width: 100%;*/
+    background: #ffffff;
+    font-family: .PingFangSC-Regular;
+}
+
+div {
+    box-sizing: border-box;
+}
+
+.header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+}
+
+.head {
+    font-size: 0.16rem;
+    height: 0.44rem;
+    background: #26A69A;
+    color: white;
+    text-align: center;
+    line-height: 0.44rem;
+}
+
+.head>a {
+    color: white;
+    float: left;
+    margin-left: 0.12rem;
+}
+
+.content {
+    margin-top: 0.44rem;
+}
+
+.content>.title {
+    
+    padding: 0.05rem;
+    text-align: center;
+    font-size:16px;
+    font-weight:500;
+    color:rgba(51,51,51,1);
+}
+
+.content>.mount {
+    padding: 0.05rem;
+    text-align: center;
+    font-size:30px;
+    font-weight:500;
+    color:rgba(51,51,51,1);
+    line-height:41px;
+}
+
+.detail {
+    padding: 0.1rem 0.3rem;
+}
+
+.detail>.line {
+    display: flex;
+    flex-direction: row;
+    font-size:14px;
+    font-weight:400;
+    color:rgba(153,153,153,1);
+    padding: 10px 0px ;
+}
+
+.detail>.line>.name {
+    flex-basis: 50%;
+    text-align: left;
+}
+
+.detail>.line>.hint {
+    flex: 1;
+    text-align: right;
+}
+
+.btn {
+    background: rgba(0, 184, 184, 1);
+    border-radius: 12px;
+    height: 46px;
+    width: 100%;
+    font-size: 16px;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 1);
+    border: none;
+    text-align: center;
+    line-height: 46px;
+    margin: 15px 0;
+}
+
+.btn:active {
+    background: rgba(0, 184, 184, 0.7);
+    border: none;
+}
+
+.btn:focus {
+    outline: none;
+}
+
+.input {
+    height: 40px;
+    width: 80%;
+    font-size: 16px;
+}

@@ -31,9 +31,6 @@
 		2934C1D5284F2F5700831513 /* iOSTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2934C1D4284F2F5700831513 /* iOSTests.m */; };
 		2934C1DF284F2F5700831513 /* iOSUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2934C1DE284F2F5700831513 /* iOSUITests.m */; };
 		2934C1E1284F2F5700831513 /* iOSUITestsLaunchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2934C1E0284F2F5700831513 /* iOSUITestsLaunchTests.m */; };
-		2934C22A284F336A00831513 /* DSCallInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 2934C223284F336A00831513 /* DSCallInfo.m */; };
-		2934C22B284F336A00831513 /* InternalApis.m in Sources */ = {isa = PBXBuildFile; fileRef = 2934C227284F336A00831513 /* InternalApis.m */; };
-		2934C22C284F336A00831513 /* JSBUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 2934C228284F336A00831513 /* JSBUtil.m */; };
 		2983BBE8285036EB004A8C1B /* htmlFile in Resources */ = {isa = PBXBuildFile; fileRef = 2983BBE7285036EB004A8C1B /* htmlFile */; };
 		2983BC6128508698004A8C1B /* demo.js in Resources */ = {isa = PBXBuildFile; fileRef = 2983BC6028508697004A8C1B /* demo.js */; };
 		2983BC6928509947004A8C1B /* UPWebViewAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2983BC6828509947004A8C1B /* UPWebViewAPI.framework */; };
@@ -74,14 +71,6 @@
 		2934C1DA284F2F5700831513 /* iOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iOSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2934C1DE284F2F5700831513 /* iOSUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iOSUITests.m; sourceTree = "<group>"; };
 		2934C1E0284F2F5700831513 /* iOSUITestsLaunchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iOSUITestsLaunchTests.m; sourceTree = "<group>"; };
-		2934C221284F336A00831513 /* dsbridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dsbridge.h; sourceTree = "<group>"; };
-		2934C222284F336A00831513 /* InternalApis.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InternalApis.h; sourceTree = "<group>"; };
-		2934C223284F336A00831513 /* DSCallInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DSCallInfo.m; sourceTree = "<group>"; };
-		2934C224284F336A00831513 /* JSBUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSBUtil.h; sourceTree = "<group>"; };
-		2934C225284F336A00831513 /* DWKWebView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DWKWebView.h; sourceTree = "<group>"; };
-		2934C226284F336A00831513 /* DSCallInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSCallInfo.h; sourceTree = "<group>"; };
-		2934C227284F336A00831513 /* InternalApis.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InternalApis.m; sourceTree = "<group>"; };
-		2934C228284F336A00831513 /* JSBUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSBUtil.m; sourceTree = "<group>"; };
 		2983BBE7285036EB004A8C1B /* htmlFile */ = {isa = PBXFileReference; lastKnownFileType = folder; path = htmlFile; sourceTree = "<group>"; };
 		2983BC6028508697004A8C1B /* demo.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = demo.js; sourceTree = "<group>"; };
 		2983BC6828509947004A8C1B /* UPWebViewAPI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = UPWebViewAPI.framework; sourceTree = "<group>"; };
@@ -139,7 +128,6 @@
 				2983BC6028508697004A8C1B /* demo.js */,
 				2983BC6828509947004A8C1B /* UPWebViewAPI.framework */,
 				2983BBE7285036EB004A8C1B /* htmlFile */,
-				2934C220284F336A00831513 /* dsbridge */,
 				2934C1B8284F2F5400831513 /* AppDelegate.h */,
 				2934C1B9284F2F5400831513 /* AppDelegate.m */,
 				2934C1BB284F2F5400831513 /* SceneDelegate.h */,
@@ -170,21 +158,6 @@
 				2934C1E0284F2F5700831513 /* iOSUITestsLaunchTests.m */,
 			);
 			path = iOSUITests;
-			sourceTree = "<group>";
-		};
-		2934C220284F336A00831513 /* dsbridge */ = {
-			isa = PBXGroup;
-			children = (
-				2934C221284F336A00831513 /* dsbridge.h */,
-				2934C222284F336A00831513 /* InternalApis.h */,
-				2934C223284F336A00831513 /* DSCallInfo.m */,
-				2934C224284F336A00831513 /* JSBUtil.h */,
-				2934C225284F336A00831513 /* DWKWebView.h */,
-				2934C226284F336A00831513 /* DSCallInfo.h */,
-				2934C227284F336A00831513 /* InternalApis.m */,
-				2934C228284F336A00831513 /* JSBUtil.m */,
-			);
-			path = dsbridge;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -344,11 +317,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				2934C1C0284F2F5400831513 /* ViewController.m in Sources */,
-				2934C22B284F336A00831513 /* InternalApis.m in Sources */,
 				2934C1BA284F2F5400831513 /* AppDelegate.m in Sources */,
 				2934C1CB284F2F5700831513 /* main.m in Sources */,
-				2934C22A284F336A00831513 /* DSCallInfo.m in Sources */,
-				2934C22C284F336A00831513 /* JSBUtil.m in Sources */,
 				2934C1BD284F2F5400831513 /* SceneDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

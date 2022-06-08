@@ -6,6 +6,20 @@
 	objectVersion = 55;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		2983BBE928503DBF004A8C1B /* iOS Shell */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 2983BBEA28503DBF004A8C1B /* Build configuration list for PBXAggregateTarget "iOS Shell" */;
+			buildPhases = (
+				2983BBED28503DC5004A8C1B /* ShellScript */,
+			);
+			dependencies = (
+			);
+			name = "iOS Shell";
+			productName = "iOS Shell";
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
 		2934C1BA284F2F5400831513 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2934C1B9284F2F5400831513 /* AppDelegate.m */; };
 		2934C1BD284F2F5400831513 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2934C1BC284F2F5400831513 /* SceneDelegate.m */; };
@@ -17,6 +31,12 @@
 		2934C1D5284F2F5700831513 /* iOSTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2934C1D4284F2F5700831513 /* iOSTests.m */; };
 		2934C1DF284F2F5700831513 /* iOSUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2934C1DE284F2F5700831513 /* iOSUITests.m */; };
 		2934C1E1284F2F5700831513 /* iOSUITestsLaunchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2934C1E0284F2F5700831513 /* iOSUITestsLaunchTests.m */; };
+		2934C22A284F336A00831513 /* DSCallInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 2934C223284F336A00831513 /* DSCallInfo.m */; };
+		2934C22B284F336A00831513 /* InternalApis.m in Sources */ = {isa = PBXBuildFile; fileRef = 2934C227284F336A00831513 /* InternalApis.m */; };
+		2934C22C284F336A00831513 /* JSBUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 2934C228284F336A00831513 /* JSBUtil.m */; };
+		2983BBE8285036EB004A8C1B /* htmlFile in Resources */ = {isa = PBXBuildFile; fileRef = 2983BBE7285036EB004A8C1B /* htmlFile */; };
+		2983BC6128508698004A8C1B /* demo.js in Resources */ = {isa = PBXBuildFile; fileRef = 2983BC6028508697004A8C1B /* demo.js */; };
+		2983BC6928509947004A8C1B /* UPWebViewAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2983BC6828509947004A8C1B /* UPWebViewAPI.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +74,17 @@
 		2934C1DA284F2F5700831513 /* iOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iOSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2934C1DE284F2F5700831513 /* iOSUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iOSUITests.m; sourceTree = "<group>"; };
 		2934C1E0284F2F5700831513 /* iOSUITestsLaunchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iOSUITestsLaunchTests.m; sourceTree = "<group>"; };
+		2934C221284F336A00831513 /* dsbridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dsbridge.h; sourceTree = "<group>"; };
+		2934C222284F336A00831513 /* InternalApis.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InternalApis.h; sourceTree = "<group>"; };
+		2934C223284F336A00831513 /* DSCallInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DSCallInfo.m; sourceTree = "<group>"; };
+		2934C224284F336A00831513 /* JSBUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSBUtil.h; sourceTree = "<group>"; };
+		2934C225284F336A00831513 /* DWKWebView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DWKWebView.h; sourceTree = "<group>"; };
+		2934C226284F336A00831513 /* DSCallInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSCallInfo.h; sourceTree = "<group>"; };
+		2934C227284F336A00831513 /* InternalApis.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InternalApis.m; sourceTree = "<group>"; };
+		2934C228284F336A00831513 /* JSBUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSBUtil.m; sourceTree = "<group>"; };
+		2983BBE7285036EB004A8C1B /* htmlFile */ = {isa = PBXFileReference; lastKnownFileType = folder; path = htmlFile; sourceTree = "<group>"; };
+		2983BC6028508697004A8C1B /* demo.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = demo.js; sourceTree = "<group>"; };
+		2983BC6828509947004A8C1B /* UPWebViewAPI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = UPWebViewAPI.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +92,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2983BC6928509947004A8C1B /* UPWebViewAPI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -104,6 +136,10 @@
 		2934C1B7284F2F5400831513 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
+				2983BC6028508697004A8C1B /* demo.js */,
+				2983BC6828509947004A8C1B /* UPWebViewAPI.framework */,
+				2983BBE7285036EB004A8C1B /* htmlFile */,
+				2934C220284F336A00831513 /* dsbridge */,
 				2934C1B8284F2F5400831513 /* AppDelegate.h */,
 				2934C1B9284F2F5400831513 /* AppDelegate.m */,
 				2934C1BB284F2F5400831513 /* SceneDelegate.h */,
@@ -134,6 +170,21 @@
 				2934C1E0284F2F5700831513 /* iOSUITestsLaunchTests.m */,
 			);
 			path = iOSUITests;
+			sourceTree = "<group>";
+		};
+		2934C220284F336A00831513 /* dsbridge */ = {
+			isa = PBXGroup;
+			children = (
+				2934C221284F336A00831513 /* dsbridge.h */,
+				2934C222284F336A00831513 /* InternalApis.h */,
+				2934C223284F336A00831513 /* DSCallInfo.m */,
+				2934C224284F336A00831513 /* JSBUtil.h */,
+				2934C225284F336A00831513 /* DWKWebView.h */,
+				2934C226284F336A00831513 /* DSCallInfo.h */,
+				2934C227284F336A00831513 /* InternalApis.m */,
+				2934C228284F336A00831513 /* JSBUtil.m */,
+			);
+			path = dsbridge;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -212,6 +263,9 @@
 						CreatedOnToolsVersion = 13.4;
 						TestTargetID = 2934C1B4284F2F5400831513;
 					};
+					2983BBE928503DBF004A8C1B = {
+						CreatedOnToolsVersion = 13.4;
+					};
 				};
 			};
 			buildConfigurationList = 2934C1B0284F2F5400831513 /* Build configuration list for PBXProject "iOS" */;
@@ -230,6 +284,7 @@
 				2934C1B4284F2F5400831513 /* iOS */,
 				2934C1CF284F2F5700831513 /* iOSTests */,
 				2934C1D9284F2F5700831513 /* iOSUITests */,
+				2983BBE928503DBF004A8C1B /* iOS Shell */,
 			);
 		};
 /* End PBXProject section */
@@ -239,7 +294,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2983BC6128508698004A8C1B /* demo.js in Resources */,
 				2934C1C8284F2F5700831513 /* LaunchScreen.storyboard in Resources */,
+				2983BBE8285036EB004A8C1B /* htmlFile in Resources */,
 				2934C1C5284F2F5700831513 /* Assets.xcassets in Resources */,
 				2934C1C3284F2F5400831513 /* Main.storyboard in Resources */,
 			);
@@ -261,14 +318,37 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2983BBED28503DC5004A8C1B /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "files=(\"./mmosite/Resources/web-contents/css/news-style.css\" \"./mmosite/Resources/web-contents/js/news-script.js\")\n\nfor fileName in ${files[*]}\n\ndo\n\nsed -n '2p' $fileName\n\necho \"fileName=${fileName}\"\n\nret=`hexdump -s 0x0 -n 3 $fileName`\n\necho $ret\n\nret=${ret:8:9}\n\necho $ret\n\nif [ \"$ret\" = \"ef bb bf \" ]\n\nthen\n\necho \"OK\"\n\nelse\n\necho \"FAIL\"\n\necho -n -e \\\\xEF\\\\xBB\\\\xBF | cat - $fileName > temp && mv temp $fileName\n\nfi\n\ndone\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		2934C1B1284F2F5400831513 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				2934C1C0284F2F5400831513 /* ViewController.m in Sources */,
+				2934C22B284F336A00831513 /* InternalApis.m in Sources */,
 				2934C1BA284F2F5400831513 /* AppDelegate.m in Sources */,
 				2934C1CB284F2F5700831513 /* main.m in Sources */,
+				2934C22A284F336A00831513 /* DSCallInfo.m in Sources */,
+				2934C22C284F336A00831513 /* JSBUtil.m in Sources */,
 				2934C1BD284F2F5400831513 /* SceneDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -443,8 +523,13 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = D75AX9VL3J;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/iOS",
+				);
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = iOS/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = JsBridgeDemo;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -470,8 +555,13 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = D75AX9VL3J;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/iOS",
+				);
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = iOS/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = JsBridgeDemo;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -557,6 +647,24 @@
 			};
 			name = Release;
 		};
+		2983BBEB28503DBF004A8C1B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = D75AX9VL3J;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		2983BBEC28503DBF004A8C1B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = D75AX9VL3J;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -592,6 +700,15 @@
 			buildConfigurations = (
 				2934C1EB284F2F5700831513 /* Debug */,
 				2934C1EC284F2F5700831513 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2983BBEA28503DBF004A8C1B /* Build configuration list for PBXAggregateTarget "iOS Shell" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2983BBEB28503DBF004A8C1B /* Debug */,
+				2983BBEC28503DBF004A8C1B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -12,7 +12,7 @@
 
 
 	|- Android（Android原生示例代碼）
-	|- iOS（IOS原始示例代碼）
+	|- iOS（IOS原生示例代碼）
 	|- index.html（前端js示例代碼）
 
 客戶端使用文檔

@@ -14,8 +14,7 @@ FOUNDATION_EXPORT double UPWebViewAPIVersionNumber;
 //! Project version string for UPWebViewAPI.
 FOUNDATION_EXPORT const unsigned char UPWebViewAPIVersionString[];
 
-
-#import <UPWebViewAPI/UPWebViewManager.h>
+#import <UPWebViewAPI/UPWebView.h>
 #import <UPWebViewAPI/DWKWebView.h>
 //#import <UPWebViewAPI/UPPayJsApi.h>
 // In this header, you should import all the public headers of your framework using statements like #import <UPWebViewAPI/PublicHeader.h>

@@ -32,8 +32,8 @@
 		2934C1DF284F2F5700831513 /* iOSUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2934C1DE284F2F5700831513 /* iOSUITests.m */; };
 		2934C1E1284F2F5700831513 /* iOSUITestsLaunchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2934C1E0284F2F5700831513 /* iOSUITestsLaunchTests.m */; };
 		2983BBE8285036EB004A8C1B /* htmlFile in Resources */ = {isa = PBXBuildFile; fileRef = 2983BBE7285036EB004A8C1B /* htmlFile */; };
-		2983BC6128508698004A8C1B /* demo.js in Resources */ = {isa = PBXBuildFile; fileRef = 2983BC6028508697004A8C1B /* demo.js */; };
-		2983BC6928509947004A8C1B /* UPWebViewAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2983BC6828509947004A8C1B /* UPWebViewAPI.framework */; };
+		29DCB6E42851DC2B00B512F6 /* jsBridge.js in Resources */ = {isa = PBXBuildFile; fileRef = 29DCB6E32851DC2B00B512F6 /* jsBridge.js */; };
+		29DCB6EB2851E60000B512F6 /* UPWebViewSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29DCB6EA2851E60000B512F6 /* UPWebViewSDK.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,8 +72,8 @@
 		2934C1DE284F2F5700831513 /* iOSUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iOSUITests.m; sourceTree = "<group>"; };
 		2934C1E0284F2F5700831513 /* iOSUITestsLaunchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iOSUITestsLaunchTests.m; sourceTree = "<group>"; };
 		2983BBE7285036EB004A8C1B /* htmlFile */ = {isa = PBXFileReference; lastKnownFileType = folder; path = htmlFile; sourceTree = "<group>"; };
-		2983BC6028508697004A8C1B /* demo.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = demo.js; sourceTree = "<group>"; };
-		2983BC6828509947004A8C1B /* UPWebViewAPI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = UPWebViewAPI.framework; sourceTree = "<group>"; };
+		29DCB6E32851DC2B00B512F6 /* jsBridge.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = jsBridge.js; sourceTree = "<group>"; };
+		29DCB6EA2851E60000B512F6 /* UPWebViewSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = UPWebViewSDK.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,7 +81,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2983BC6928509947004A8C1B /* UPWebViewAPI.framework in Frameworks */,
+				29DCB6EB2851E60000B512F6 /* UPWebViewSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -125,8 +125,7 @@
 		2934C1B7284F2F5400831513 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
-				2983BC6028508697004A8C1B /* demo.js */,
-				2983BC6828509947004A8C1B /* UPWebViewAPI.framework */,
+				29DCB6E52851DC4500B512F6 /* UPWebViewSDK */,
 				2983BBE7285036EB004A8C1B /* htmlFile */,
 				2934C1B8284F2F5400831513 /* AppDelegate.h */,
 				2934C1B9284F2F5400831513 /* AppDelegate.m */,
@@ -158,6 +157,15 @@
 				2934C1E0284F2F5700831513 /* iOSUITestsLaunchTests.m */,
 			);
 			path = iOSUITests;
+			sourceTree = "<group>";
+		};
+		29DCB6E52851DC4500B512F6 /* UPWebViewSDK */ = {
+			isa = PBXGroup;
+			children = (
+				29DCB6EA2851E60000B512F6 /* UPWebViewSDK.framework */,
+				29DCB6E32851DC2B00B512F6 /* jsBridge.js */,
+			);
+			path = UPWebViewSDK;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -267,8 +275,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2983BC6128508698004A8C1B /* demo.js in Resources */,
 				2934C1C8284F2F5700831513 /* LaunchScreen.storyboard in Resources */,
+				29DCB6E42851DC2B00B512F6 /* jsBridge.js in Resources */,
 				2983BBE8285036EB004A8C1B /* htmlFile in Resources */,
 				2934C1C5284F2F5700831513 /* Assets.xcassets in Resources */,
 				2934C1C3284F2F5400831513 /* Main.storyboard in Resources */,
@@ -496,6 +504,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/iOS",
+					"$(PROJECT_DIR)/iOS/UPWebViewSDK",
 				);
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = iOS/Info.plist;
@@ -528,6 +537,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/iOS",
+					"$(PROJECT_DIR)/iOS/UPWebViewSDK",
 				);
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = iOS/Info.plist;

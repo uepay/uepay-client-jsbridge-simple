@@ -8,25 +8,17 @@
 		<data>
 		pexKLIOltJbyeprnRl5lRdP9Ny0=
 		</data>
+		<key>Headers/UPWebView.h</key>
+		<data>
+		L79J3N+kkBzE+qxXwV5lonEoTws=
+		</data>
 		<key>Headers/UPWebViewAPI.h</key>
 		<data>
-		Sv04L5a1KbS9XMu1zh9pYk3Yn10=
-		</data>
-		<key>Headers/UPWebViewManager.h</key>
-		<data>
-		ZVsqlo6v4eoMAQASepyrKEuzqRc=
+		Nh9y4gA7eTFknyrziljiMAIuRrY=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		qJn1De1AzykZ8G3zdq0SsFkJxCQ=
-		</data>
-		<key>Modules/module.modulemap</key>
-		<data>
-		NARBy2OUBo2cE+3HBE07obFADyg=
-		</data>
-		<key>demo.js</key>
-		<data>
-		k8lLlYPI7nQJ7xS4xWVbPtSxsyg=
+		7Nf2Lji7X0K5kEvsurP8iiEpSu4=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -42,48 +34,26 @@
 			nGSjnOX/0kBk5G8IKVLGcoCX9Qh+W05G4laBps4wUME=
 			</data>
 		</dict>
+		<key>Headers/UPWebView.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			L79J3N+kkBzE+qxXwV5lonEoTws=
+			</data>
+			<key>hash2</key>
+			<data>
+			Bb2rQ6+CCgho2weJC/m8cNenzoGIk+jWFWkFogBk6AQ=
+			</data>
+		</dict>
 		<key>Headers/UPWebViewAPI.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			Sv04L5a1KbS9XMu1zh9pYk3Yn10=
+			Nh9y4gA7eTFknyrziljiMAIuRrY=
 			</data>
 			<key>hash2</key>
 			<data>
-			y5qI+NhP1tYt9emtxKB3nGR8VLzCXrbtacLtWZJmWcY=
-			</data>
-		</dict>
-		<key>Headers/UPWebViewManager.h</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			ZVsqlo6v4eoMAQASepyrKEuzqRc=
-			</data>
-			<key>hash2</key>
-			<data>
-			JJYIMMPWKWMNiYMMDzfcF/l+AiDIiodqkI6GfD9ZOIM=
-			</data>
-		</dict>
-		<key>Modules/module.modulemap</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			NARBy2OUBo2cE+3HBE07obFADyg=
-			</data>
-			<key>hash2</key>
-			<data>
-			J37ZoQQmqtlVW1S5zaf0nbi8zs9fp6LlMHG8lckOmQk=
-			</data>
-		</dict>
-		<key>demo.js</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			k8lLlYPI7nQJ7xS4xWVbPtSxsyg=
-			</data>
-			<key>hash2</key>
-			<data>
-			4kXIyyMpi20gu3B9eQ4hoxBHTatkyV/bPZO94rzpmGI=
+			+N9ZaZZjsyApwPLPDGC4EkBo1jwffFxzK+jCQC3xYzk=
 			</data>
 		</dict>
 	</dict>

@@ -1,0 +1,6 @@
+framework module UPWebViewAPI {
+  umbrella header "UPWebViewAPI.h"
+
+  export *
+  module * { export * }
+}

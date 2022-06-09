@@ -10,6 +10,14 @@ dependencyResolutionManagement {
     repositories {
         google()
         mavenCentral()
+        maven {
+            url 'http://192.168.0.17:8082/nexus/content/repositories/android-snapshots'
+            credentials {
+                username = 'dev'
+                password = 'dev123'
+                allowInsecureProtocol = true
+            }
+        }
     }
 }
 rootProject.name = "android"

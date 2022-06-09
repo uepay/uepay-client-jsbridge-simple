@@ -1,3 +1,4 @@
 <resources>
-    <string name="app_name">android</string>
+    <string name="app_name">UePay-WebView-SDK</string>
+    <string name="app_title">UePay客戶端WebView組件SDK示例</string>
 </resources>

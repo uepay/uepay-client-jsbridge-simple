@@ -1,48 +1,31 @@
-//
-//  ViewController.m
-//  iOS
-//
-//  Created by uepay-pc-016 on 2022/6/7.
-//
+UePay-SDK-WebView for iOS
 
-#import "ViewController.h"
-#import <UPWebViewSDK/UPWebView.h>
+iOS客戶端 webView組件SDK示例使用說明
 
-@interface ViewController ()<UPWebViewDelegate,WKNavigationDelegate>
-@property(weak,nonatomic)UPWebView * webView;
-@end
+安裝
+1.導入UPWebViewSDK 和 jsBridge.js文件到工程目錄下
+2.導入頭文件#import <UPWebViewSDK/UPWebView.h>
 
-@implementation ViewController
+使用
+1.初始化組件並設置delegate
+UPWebView * webView = [[UPWebView alloc]initWebView];
+webView.navigationDelegate = self;
+webView.delegate = self;
+webView.frame  = self.view.bounds;
+[self.view addSubview:webView];
 
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    // Do any additional setup after loading the view.
-    NSString *filePath = [[NSBundle mainBundle] pathForResource:@"index" ofType:@"html" inDirectory:@"htmlFile"];
-    NSURL *pathURL = [NSURL fileURLWithPath:filePath];
+2.加載並設置userAgent
+/*
+加載urlString
+*/
+[webView loadUrlString:@"url地址" withUserAgent:@"testDemo"];
 
-    UPWebView * webView = [[UPWebView alloc]initWebView];
-    _webView = webView;
-    //设置代理
-    webView.navigationDelegate = self;
-    webView.delegate = self;
-    
-    //加载html文件
-    [webView loadHtmlFile:pathURL withUserAgent:@"testDemo"];
-    
-    //加载urlString
-//    [webView loadUrlString:@"" withUserAgent:@""];
-    
-    //设置webView层级和frame
-    webView.frame  = self.view.bounds;
-    [self.view addSubview:webView];
-    
-}
-
+3.在WKWebView添加js配置文件
 -(void)webView:(WKWebView *)webView didFinishNavigation:(WKNavigation *)navigation{
-    [_webView addJsConfig];
-    
+    [self.webView addJsConfig];
 }
 
+4.實現UPWebViewDelegate 方法,註冊js調用的函數
 -(void)UPGetLocationWithParameter:(NSDictionary *)parameter andCallBack:(void (^)(NSString * _Nonnull))handleComplete{
 
     NSDictionary *dict = @{
@@ -83,8 +66,7 @@
     }];
 }
 
-
-
+5.回調結果
 -(void)showAlertMessage:(NSString *)message HandleComplete:(void(^)(NSString *))handleComplete{
     
     
@@ -134,5 +116,3 @@
     [self presentViewController:alert animated:YES completion:nil];
 }
 
-
-@end
